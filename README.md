@@ -17,7 +17,7 @@ The model is trained on a dataset that includes information from [The Blue Allia
     pip install pandas scikit-learn xgboost
     ```
 ## How to use it?
-You will find various models trained in the available dataset in the models folder. The models are classified in the following way:
+You will find various models trained in the available dataset in the models folder. The models are classified in the following way.
 
 [`dev`]: Model still in development or highly experimental
 [`stable`]: More finished and tested model.
@@ -26,7 +26,8 @@ You will find various models trained in the available dataset in the models fold
 > *We recommend you stick to the release version, but some stable versions should be fine for general use*
 
 **General match data**
-> *Match data fetched from [The Blue Alliance](https://www.thebluealliance.com/) used as a target forprediction *
+> *Match data fetched from [The Blue Alliance](https://www.thebluealliance.com/) used as a target forprediction.*
+
 [`year`]: The current year the match occurred.
 [`event_key`]: The key assigned by the TBA for the event in which the match takes place.
 [`comp_level`]: The match level in the competition. [`qm`] for qualification matches, [`qf`] for quarter finals, [`sf`] for semi finals, [`f`] for finals.
