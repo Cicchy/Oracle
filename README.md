@@ -27,7 +27,6 @@ You will find various models trained in the available dataset in the models fold
 
 **General match data**
 > *Match data fetched from [The Blue Alliance](https://www.thebluealliance.com/) used as a target forprediction.*
-
 [`year`]: The current year the match occurred.
 [`event_key`]: The key assigned by the TBA for the event in which the match takes place.
 [`comp_level`]: The match level in the competition. [`qm`] for qualification matches, [`qf`] for quarter finals, [`sf`] for semi finals, [`f`] for finals.
