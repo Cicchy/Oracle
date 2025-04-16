@@ -1,11 +1,11 @@
-#Oracle
+# Oracle
 
 Oracle is an AI model that predicts match outcomes based on historical match data. Oracle is capable
 
 ##Description
 The model is trained on a dataset that includes information from [The Blue Alliance](https://www.thebluealliance.com/) for basic match data, such as teams and points, and [Statbotics](statbotics.io) for team performance evaluation metrics like the [EPA model](https://www.statbotics.io/blog/intro). The model implements the XGBoost algorithm to predict the score breakdown of a match.
 
-##Set up
+## Set up
 1.  **Clone the repository:**
 
     ```bash
@@ -16,7 +16,7 @@ The model is trained on a dataset that includes information from [The Blue Allia
     ```bash
     pip install pandas scikit-learn xgboost
     ```
-##How to use it?
+## How to use it?
 You will find various models trained in the available dataset in the models folder. The models are classified in the following way:
 
 [`dev`]: Model still in development or highly experimental
