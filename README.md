@@ -9,7 +9,7 @@ The model is trained on a dataset that includes information from [The Blue Allia
 1.  **Clone the repository:**
 
     ```bash
-    git clone <URL_del_repositorio>
+    git clone https://github.com/Cicchy/Oracle
     ```
 2.  **Install dependencies:**
 
