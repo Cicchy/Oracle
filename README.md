@@ -1,44 +1,53 @@
 # Oracle
 
-Oracle is an AI model that predicts match outcomes based on historical match data. Oracle is capable of predictin FRC match outcomes
+Oracle is an AI model that predicts match outcomes based on historical match data. Oracle is capable of predicting FRC match outcomes.
 
 ## Description
+
 The model is trained on a dataset that includes information from [The Blue Alliance](https://www.thebluealliance.com/) for basic match data, such as teams and points, and [Statbotics](statbotics.io) for team performance evaluation metrics like the [EPA model](https://www.statbotics.io/blog/intro). The model implements the XGBoost algorithm to predict the score breakdown of a match.
 
 ## Set up
+
 1.  **Clone the repository:**
 
     ```bash
-    git clone https://github.com/Cicchy/Oracle
+    git clone [https://github.com/Cicchy/Oracle](https://github.com/Cicchy/Oracle)
     ```
+
 2.  **Install dependencies:**
 
     ```bash
     pip install pandas scikit-learn xgboost
     ```
+
 ## How to use it?
-You will find various models trained in the available dataset in the models folder. The models are classified in the following way.
 
-[`dev`]: Model still in development or highly experimental
-[`stable`]: More finished and tested model.
-[`release`]: Official release used on the Oracle website.
+You will find various models trained on the available dataset in the `models` folder. The models are classified in the following way:
 
-> *We recommend you stick to the release version, but some stable versions should be fine for general use*
+* [`dev`]: Model still in development or highly experimental.
+* [`stable`]: More finished and tested model.
+* [`release`]: Official release used on the Oracle website.
+
+> *We recommend you stick to the release version, but some stable versions should be fine for general use.*
 
 **General match data**
-> *Match data fetched from [The Blue Alliance](https://www.thebluealliance.com/) used as a target forprediction.*
-[`year`]: The current year the match occurred.
-[`event_key`]: The key assigned by the TBA for the event in which the match takes place.
-[`comp_level`]: The match level in the competition. [`qm`] for qualification matches, [`qf`] for quarter finals, [`sf`] for semi finals, [`f`] for finals.
-[`match_number`]: The number of the current match.
-[`alliance_score`]:
-[`alliance_auto_points`]:
-[`alliance_teleop_points`]:
-[`alliance_endgame_points`]:
-[`alliance_rp`]: 
+
+> *Match data fetched from [The Blue Alliance](https://www.thebluealliance.com/) used as a target for prediction.*
+
+* [`year`]: The current year the match occurred.
+* [`event_key`]: The key assigned by the TBA for the event in which the match takes place.
+* [`comp_level`]: The match level in the competition. [`qm`] for qualification matches, [`qf`] for quarter finals, [`sf`] for semi finals, [`f`] for finals.
+* [`match_number`]: The number of the current match.
+* [`alliance_score`]: The total score of the alliance.
+* [`alliance_auto_points`]: The auto points scored by the alliance.
+* [`alliance_teleop_points`]: The teleop points scored by the alliance.
+* [`alliance_endgame_points`]: The endgame points scored by the alliance.
+* [`alliance_rp`]: The ranking points earned by the alliance.
 
 **Team data**
+
 > *Individual team evaluation metrics, for better understanding of the EPA system, check out the [EPA model](https://www.statbotics.io/blog/intro).*
+
 * [`team_epa`]: The overall Expected Points Added (EPA) for the team.
 * [`team_epa_auto`]: The EPA for the team during the autonomous period.
 * [`team_epa_teleop`]: The EPA for the team during the teleoperated period.
@@ -51,7 +60,6 @@ You will find various models trained in the available dataset in the models fold
 
 * [`epa_dif`]: The difference in EPA between the red and blue alliances.
 * [`epa_ratio`]: The ratio of the red alliance's EPA to the blue alliance's EPA.
-
 
 ## Simple implementation
 
