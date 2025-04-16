@@ -1,8 +1,8 @@
 # Oracle
 
-Oracle is an AI model that predicts match outcomes based on historical match data. Oracle is capable
+Oracle is an AI model that predicts match outcomes based on historical match data. Oracle is capable of predictin FRC match outcomes
 
-##Description
+## Description
 The model is trained on a dataset that includes information from [The Blue Alliance](https://www.thebluealliance.com/) for basic match data, such as teams and points, and [Statbotics](statbotics.io) for team performance evaluation metrics like the [EPA model](https://www.statbotics.io/blog/intro). The model implements the XGBoost algorithm to predict the score breakdown of a match.
 
 ## Set up
